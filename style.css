@@ -35,7 +35,7 @@ body {
   margin: 60px auto;
   border-top: solid 4px;
   border-radius: 5px;
-  
+  box-shadow: 0 5px 8px 4px rgba(0, 0, 0,0.12);
 }
 
 .item-1 {
@@ -71,4 +71,44 @@ h3 {
   position: relative;
   left: 80px;
   top: 40px;
+}
+
+@media(min-width:1000px){ /* desktop */
+  
+}
+@media(max-width:999px){ /* mobile */
+  #container{
+    max-width: 300px;
+    /* margin: auto; */
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  .text {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    width: 80%;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 300px;
+  }
+  .light-header {
+    font-size: 26px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+  }
+  .thick-header{
+    font-size: 26px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+  }
+  .item-4 {
+    margin-left: 0px;
+    border-color: hsl(212, 86%, 64%);
+  }
+
 }
